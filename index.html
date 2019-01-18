@@ -57,7 +57,7 @@
             transform: rotate(360deg);
             -ms-transform: rotate(360deg); /* IE 9 */
             -moz-transform: rotate(360deg); /* Firefox */
-            -webkit-transform: rotate(360deg); /* Safari ºÍ Chrome */
+            -webkit-transform: rotate(360deg); /* Safari å’Œ Chrome */
             -o-transform: rotate(360deg); /* Opera */
             filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
         }
@@ -87,7 +87,7 @@
 </head>
 
 <body>
-<!--¸ü¸ÄÎªÄãÅ®ÅóÓÑµÄÍ·Ïñ-->
+<!--æ›´æ”¹ä¸ºä½ å¥³æœ‹å‹çš„å¤´åƒ-->
 <div class="cs">
     <img src="http://wx1.sinaimg.cn/large/006gFOhdly1fr0hdrzlolj30b40b4dg7.jpg" id="logo">
 </div>
@@ -100,7 +100,7 @@
 <script language="javascript">
     function show_date_time() {
         window.setTimeout("show_date_time()", 1000);
-        BirthDay = new Date("2/20/2018 00:00:00");//Õâ¸öÈÕÆÚÊÇ¿ÉÒÔĞŞ¸ÄµÄ
+        BirthDay = new Date("11/10/2018 12:05:00");//è¿™ä¸ªæ—¥æœŸæ˜¯å¯ä»¥ä¿®æ”¹çš„
         today = new Date();
         timeold = (today.getTime() - BirthDay.getTime());
         sectimeold = timeold / 1000
@@ -113,7 +113,7 @@
         e_minsold = (e_hrsold - hrsold) * 60;
         minsold = Math.floor((e_hrsold - hrsold) * 60);
         seconds = Math.floor((e_minsold - minsold) * 60);
-        span_dt_dt.innerHTML = daysold + "Ìì" + hrsold + "Ğ¡Ê±" + minsold + "·Ö" + seconds + "Ãë";
+        span_dt_dt.innerHTML = daysold + "å¤©" + hrsold + "å°æ—¶" + minsold + "åˆ†" + seconds + "ç§’";
     }
     show_date_time();
 </script>
@@ -122,8 +122,8 @@
         init: function () {
             S.Drawing.init('.canvas');
             document.body.classList.add('body--ready');
-			//ÏëËµµÄ»°
-            S.UI.simulate("ÄÈÄÈ|I'm|ZLOE|Nice|to|Meet|You|#countdown 3|#time");
+			//æƒ³è¯´çš„è¯
+            S.UI.simulate("å®å®|I'm|ZLOE|Nice|to|Meet|You|#countdown 3|#time");
             S.Drawing.loop(function () {
                 S.Shape.render();
             });
@@ -576,7 +576,7 @@
     }());
     S.init();
 </script>
-//ÒôÀÖ¿É¸Ä
+//éŸ³ä¹å¯æ”¹
 <audio autoplay="autoplay" loop="loop">
     <source src="http://m10.music.126.net/20180509183512/5ae461e9a42675d782840bf139b05c60/ymusic/e492/ea7a/6a27/8799d19e52d9bbe3ae15febb03d7efdb.mp3" type="audio/mpeg">
 </audio>
