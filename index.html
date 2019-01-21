@@ -14,7 +14,8 @@
             font-family: "Helvetica Neue", "Luxi Sans", "DejaVu Sans", Tahoma, "Hiragino Sans GB", "Microsoft Yahei", sans-serif;
             background: #79a8ae;
             color: #CFEBE4;
-            font-size: 18px;
+            font-size: 10px;
+<!--change 18-10-->
             line-height: 2;
             letter-spacing: 1.2px;
             margin: 0;
@@ -87,7 +88,7 @@
 </head>
 
 <body>
-<!--更改为你女朋友的头像-->
+<!--更改为头像-->
 <div class="cs">
     <img src="http://wx1.sinaimg.cn/large/006gFOhdly1fr0hdrzlolj30b40b4dg7.jpg" id="logo">
 </div>
@@ -122,8 +123,8 @@
         init: function () {
             S.Drawing.init('.canvas');
             document.body.classList.add('body--ready');
-			//想说的话
-            S.UI.simulate("宝宝|I'Mars|Nice|to|Meet|You|#countdown 3|#time");
+			//say
+            S.UI.simulate("SCP|I'Mars|Nice|to|Meet|You|#countdown 3|#time");
             S.Drawing.loop(function () {
                 S.Shape.render();
             });
