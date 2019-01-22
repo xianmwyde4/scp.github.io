@@ -90,7 +90,7 @@
 <body>
 <!--更改为头像-->
 <div class="cs">
-    <img src="http://wx1.sinaimg.cn/large/006gFOhdly1fr0hdrzlolj30b40b4dg7.jpg" id="logo">
+    <img src="2.jpg" id="logo">
 </div>
 <canvas class="canvas" width="1820" height="905"></canvas>
 <p class="text" style="color: #ed3073;">
@@ -101,7 +101,7 @@
 <script language="javascript">
     function show_date_time() {
         window.setTimeout("show_date_time()", 1000);
-        BirthDay = new Date("11/10/2018 12:05:00");//这个日期是可以修改的
+        BirthDay = new Date("11/10/2018 12:05:00");
         today = new Date();
         timeold = (today.getTime() - BirthDay.getTime());
         sectimeold = timeold / 1000
@@ -123,8 +123,8 @@
         init: function () {
             S.Drawing.init('.canvas');
             document.body.classList.add('body--ready');
-			//say
-            S.UI.simulate("SCP|请|往|后|面|看|#countdown 3|turn back");
+			
+            S.UI.simulate("SCP|请|往|后|面|看|#countdown 3|转身");
             S.Drawing.loop(function () {
                 S.Shape.render();
             });
